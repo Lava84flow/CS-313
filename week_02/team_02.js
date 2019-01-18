@@ -2,6 +2,7 @@
 
 function changeButton(node) {
     node.innerHTML = 'Clicked!';
+    alert('Clicked!');
 }
 
 function changeColor(choice, node) {
