@@ -10,29 +10,41 @@
     
 <body>
     
-    <!--Start Here-->
     
-    <?php //echo "Hello World"; ?>
-    
+    <div class="nav-bar sticky clearfix">
     <nav>
         <?php include '../shared/nav.php'; ?>
     </nav>
+    </div>
     
+    <div id="wrapper">    
+    <div>
     <header>
         <?php include '../shared/header.php'; ?>
     </header>
+    </div>
+        
     
     <main>
-        <p>
-            Blargh
-        </p>
+        <div> 
+        <h1>
+            Assignments
+        </h1>
+        <h2>
+            To Be Announced
+        </h2>
+        <h3>
+            Just go to the <a href="">About</a> and <a href="">Contact</a> pages for now.
+        </h3>
+        </div>
     </main>
     
-    <footer>
+        
+    <div>
+    <footer class="clearfix">
         <?php include '../shared/footer.php'; ?>
     </footer>
-    
-    <!--End Here-->
-    
+    </div>
+    </div>
 </body>
 </html>
