@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <title>CS-313 | Contact | Lava84flow</title>
     
-<link href="../shared/main.css" rel="stylesheet" type="text/css">
-<script src="../shared/main.js" defer></script>
+<link href="./shared/main.css" rel="stylesheet" type="text/css">
+<script src="./shared/main.js" defer></script>
 </head>
     
 <body>
     
     <div class="nav-bar sticky clearfix">
     <nav>
-        <?php include '../shared/nav.php'; ?>  
+        <?php include './shared/nav.php'; ?>  
     </nav>
     </div>
     
@@ -21,7 +21,7 @@
     <div>
     <header>        
         <?php 
-            include '../shared/header.php';
+            include './shared/header.php';
             echo '<h3> Contact</h3></span>';
         ?>    
     </header>
@@ -43,7 +43,7 @@
         
     <div>
     <footer class="clearfix">
-        <?php include '../shared/footer.php'; ?>
+        <?php include './shared/footer.php'; ?>
     </footer>
     </div>
     </div>
