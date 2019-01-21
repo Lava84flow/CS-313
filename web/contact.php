@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>CS-313 | Home | Lava84flow</title>
+<title>CS-313 | Contact | Lava84flow</title>
     
 <link href="../shared/main.css" rel="stylesheet" type="text/css">
 <script src="../shared/main.js" defer></script>
@@ -22,22 +22,22 @@
     <header>        
         <?php 
             include '../shared/header.php';
-            echo '<h3> Home</h3></span>';
+            echo '<h3> Contact</h3></span>';
         ?>    
     </header>
     </div>
     
     <main>
-        <div> 
-        <h1>
-            Assignments
-        </h1>
-        <h2>
-            To Be Announced/Under Construction/Yadda Yadda...
-        </h2>
-        <h3>
-            Just go to the <a href="../web/about.php">About</a> and <a href="../web/contact.php">Contact</a> pages for now.
-        </h3>
+        <div>
+            
+            <h1>
+                Please Don't
+            </h1>
+            
+            <p>
+                If you really, truly need to bug me about something, I'll be over <a href="https://discord.gg/eEyuwpJ">here</a> on my Web-Mastering <a href="https://discordapp.com/">Discord</a> server.
+            </p>
+            <iframe src="https://discordapp.com/widget?id=536783066518257684&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
         </div>
     </main>
         

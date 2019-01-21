@@ -2,14 +2,17 @@
 /* CSS Document */
 
 body {
-    background-image: url("dark-stripe-BG.png");
+    background-image: url("./pics/dark-stripe-BG.png");
     background-attachment: fixed;
     color: rgb(180,180,180);
     margin: auto;
     margin-top: 0;
-    margin-bottom: 0;
-    width: 80%;
+    margin-bottom: 2em;
+    width: 60%;
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+a {
+    color: orangered;
 }
 body div#wrapper {
     /*background-color: rgba(30,30,30,1.00);*/
@@ -17,8 +20,7 @@ body div#wrapper {
     /*border: thick solid rgba(30,30,30,1.00);*/
     border: thick solid darkred;
     border-radius: 2.8em;
-    z-index: -1;
-    position: relative;    
+    z-index: -1;   
     /*height: 2000px;*/
 }
 nav {
@@ -59,6 +61,11 @@ nav img {
     padding: .5em;
     margin-top: .35em;
     margin-right: .35em;
+    animation: LogoSpinCCW 4s linear infinite;
+    animation-play-state: paused;
+}
+nav img:hover {
+    animation-play-state: running;
 }
 .sticky {
     position: sticky;
@@ -74,9 +81,17 @@ header {
     border-radius: 2.5em 2.5em 0 0;
     margin-bottom: 1.5em;
 }
+header h1 {
+    margin-top: 0;
+}
+#subtitle h2{
+    display: inline;
+}
+#subtitle h3{
+    display: inline;
+}
 main {
     background-color: rgba(30,30,30,1.00);
-
     padding: 1.25em;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
@@ -84,6 +99,18 @@ main {
 main div {
     width: 80%;
     margin: auto;
+}
+main p {
+    font-size: 14pt;
+    width: 90%;
+    margin: auto;
+    padding-bottom: .5em;
+}
+iframe {
+    margin: auto;
+    display: block;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
 }
 footer {
     background-color: rgba(30,30,30,1.00);
@@ -93,6 +120,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: -1
 }
 
 footer img {
@@ -102,9 +131,21 @@ footer img {
     padding: .5em;
     display: inline-block;
     margin: .5em;
+
 }
+
 footer img:nth-child(1){
-    transform: rotate(-90deg)
+    animation: LogoSpinCW 8s linear infinite;
+}
+footer img:nth-child(3    ){
+    animation: LogoSpinCCW 8s linear infinite;
+}
+
+@keyframes LogoSpinCCW {
+    100% {transform: rotate(-1turn);}
+}
+@keyframes LogoSpinCW {
+    100% {transform: rotate(1turn);}
 }
 .clearfix {
     overflow: auto;
