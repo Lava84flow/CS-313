@@ -21,6 +21,8 @@ CREATE TABLE IF NOT EXISTS Customers (
 CREATE UNIQUE INDEX Username_UNIQUE ON Customers (CustomerUsername);
 CREATE UNIQUE INDEX Email_UNIQUE ON Customers (CustomerEmail);
 
+ALTER SEQUENCE Customers_idCustomers_seq RESTART WITH 1001;
+
 -- -----------------------------------------------------
 -- Table Products
 -- -----------------------------------------------------
@@ -43,7 +45,7 @@ CREATE TABLE IF NOT EXISTS Products (
 CREATE UNIQUE INDEX Productimage_UNIQUE ON Products (Productimage);
 CREATE UNIQUE INDEX Code_UNIQUE ON Products (Code);
 
-
+ALTER SEQUENCE Products_idProducts_seq RESTART WITH 1001;
 
 -- -----------------------------------------------------
 -- Table Orders
@@ -68,7 +70,7 @@ CREATE TABLE IF NOT EXISTS Orders (
     REFERENCES Customers (idCustomers)
 );
 
-
+ALTER SEQUENCE Orders_idOrders_seq RESTART WITH 1001;
 
 -- -----------------------------------------------------
 -- Table Addresses
@@ -89,6 +91,7 @@ CREATE TABLE IF NOT EXISTS Addresses (
     REFERENCES Customers (idCustomers)
 );
 
+ALTER SEQUENCE Addresses_idAddresses_seq RESTART WITH 1001;
 
 -- -----------------------------------------------------
 -- Table Saved_Payment
@@ -107,6 +110,7 @@ CREATE TABLE IF NOT EXISTS Saved_Payment (
     REFERENCES Customers (idCustomers)
 );
 
+ALTER SEQUENCE Saved_Payment_idSaved_Payment_seq RESTART WITH 1001;
 
 -- -----------------------------------------------------
 -- Table OrderProduct
@@ -126,4 +130,4 @@ CREATE TABLE IF NOT EXISTS Saved_Payment (
       REFERENCES Products (idProducts)
   );
 
-
+ALTER SEQUENCE OrderProduct_idOrderProduct_seq RESTART WITH 1001;
